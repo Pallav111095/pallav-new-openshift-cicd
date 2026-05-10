@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone Source') {
+            steps {
+                echo 'Cloning source code'
+            }
+        }
+
+        stage('Build Image') {
+            steps {
+                echo 'Building container image'
+            }
+        }
+
+        stage('Deploy Application') {
+            steps {
+                echo 'Deploying application to OpenShift'
+            }
+        }
+
+        stage('Verification') {
+            steps {
+                echo 'Deployment verification completed'
+            }
+        }
+    }
+}
