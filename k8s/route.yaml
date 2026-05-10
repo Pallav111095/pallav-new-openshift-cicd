@@ -10,4 +10,4 @@ spec:
     name: nginx-service
 
   port:
-    targetPort: 8080
+    targetPort: 80-tcp
